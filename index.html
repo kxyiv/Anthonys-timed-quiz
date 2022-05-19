@@ -4,12 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <title>JavaScript Fundamentals Quiz</title>
 </head>
 <body>
-    <div id="quiz"></div>
-    <button id="submit">Submit Quiz</button>
+    <section class="introduction">
+            <h1>Welcome to the quiz.</h1>
+            <button class="startBtn">Start Quiz</button>
+    </section>
+    <div id="quiz" class="d-none">
+        <section class="question">
+            How many data-types are there?
+        </section>
+        <section>
+        <button type="button" class="answer1 answerButtons">2</button>
+        <button type="button" class="answer2 answerButtons">5</button>
+        <button type="button" class="answer3 answerButtons">4</button>
+        </section>
+    </div>
+    <button id="submit" class="d-none">Submit Quiz</button>
     <div id="results"></div>
     <script src="script.js"> </script>
 </body>
